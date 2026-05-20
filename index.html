@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page</title>
+    <script src="https://kit.fontawesome.com/61faf2f9a9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="#" class="logo">Logo</a>
+        <ul class="nav-links">
+            <li>Home</li>
+            <li>Services</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+        </ul>
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <div class="nav-user">Username</div>
+            <i onclick="document.querySelector('#menu-list').classList.remove('none')" class="fa-solid fa-bars menu-icon"></i>
+        </div>
+
+        <div id="menu-list" class="menu-list none">
+            <a href="">Home</a>
+            <a href="">Service</a>
+            <a href="">About Us</a>
+            <a href="">Contact Us</a>
+        </div>
+    </header>
+    <main class="main-body">
+        <section class="detail-section" id="detail-section">
+            <h2 class="heading">Revitalize Your Clothes with Expert <span>Laundry Service!</span></h2>
+            <p class="subheading">From premium dry cleaning to swift wash and fold, we deliver care and convenience.
+                Schedule a pickup and rediscover the freshness of your clothes today!</p>
+            <button class="btn">Book a service today!</button>
+        </section>
+        <section class="image-section" id="image-section"><img src="washing-machine.png" alt="washing machine">
+        </section>
+    </main>
+</body>
+
+</html>

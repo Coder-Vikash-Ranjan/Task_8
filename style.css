@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #666;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: none;
+}
+
+.nav-user {
+    border-radius: 15px;
+    padding: 15px 20px;
+    color: #1baeff;
+    background-color: #e6f6ff;
+}
+
+.menu-list {
+    position: absolute;
+    height: 1750px;
+    height: 100vh;
+    width: 250px;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: black;
+}
+
+.menu-list a {
+    color: white;
+    font-size: 33px;
+    text-decoration: none;
+}
+
+.none {
+    display: none;
+}
+
+.main-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-section {
+    padding: 20px 5vw;
+}
+
+.heading {
+    font-size: 35px;
+    color: #666;  
+}
+
+.subheading {
+    margin-top: 1vh;
+    font-size: 15px;
+    color: #999;
+}
+
+.btn {
+    border: none;
+    border-radius: 15px;    
+    font-weight: 600;
+    margin-top: 5vh;
+    padding: 15px 25px;
+    color: #fff;
+    background-color: #04a7ff;
+}
+
+.detail-section span {
+    color: #06a8ff;
+}
+
+.image-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-section img {
+    width: 100%;
+}
+
+@media (min-width: 750px) {
+    .nav-links {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .main-body {
+        flex-direction: row;
+    }
+
+    .detail-section,
+    .image-section {
+        width: 50%;
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+
+    .subheading {
+        font-size: 18px;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+}
+
+@media (min-width: 1000px) {
+    .nav-links {
+        font-size: 23px;
+        gap: 40px;
+    }
+
+    .main-body {
+        height: calc(100vh - 60px);
+    }
+     
+    .detail-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .heading {
+        font-size: 55px;
+    }
+
+    /* .image-section{
+        height: 100%;
+    } */
+
+    .image-section img {
+        height: 100%;
+    }
+
+    .btn {
+        margin-top: 10vh;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+}
